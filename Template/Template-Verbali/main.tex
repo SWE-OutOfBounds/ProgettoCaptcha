@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+
+% Impostazioni generali
+
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\selectlanguage{italian}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{geometry}
+\geometry{
+    a4paper,    
+    left=20mm,  
+    right=20mm, 
+    top=30mm, 
+    bottom=20mm,
+    headheight=50pt
+    }
+\usepackage{eso-pic,graphicx, transparent}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    pdftitle={Verbale riunione dd/mm/yy v 0.0.1} %AGGIUNGI DATA E VERSIONE
+   }
+
+% Header e footer delle pagine
+
+\usepackage{fancyhdr, lastpage}
+\pagestyle{fancy}
+\lhead{\includegraphics[width=0.3in,height=0.3in]{logov2.png} \large \bfseries Out of Bounds}
+\rhead{\textsl{Verbale riunione dd/mm/yy v 0.0.1}}  
+\rfoot{Pagina \thepage di \pageref{LastPage}}
+\lfoot{\href{mailto::sweoutofbounds@gmail.com}{sweoutofbounds@gmail.com}}
+\cfoot{}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\input{frontespizio}
+\clearpage
+
+
+\tableofcontents
+\clearpage
+
+\section{Informazioni generali} 
+\begin{itemize}
+    \item Luogo:
+    \item Data:
+    \item Orario di inizio:
+    \item Orario di fine:
+    \item Lista partecipanti:
+\end{itemize}
+\begin{center}
+\begin{tabularx}{0.8\textwidth} { 
+   >{\raggedright\arraybackslash}X 
+   >{\centering\arraybackslash}X 
+   >{\raggedleft\arraybackslash}X  }
+\hline
+    \textbf{Nome e Cognome} &      \textbf{ruolo}   &   \textbf{presente}\\
+\hline
+    Jacopo Angeli           &       \emph{ruolo}    &   \emph{presente}\\
+    Simone Bisortole        &       \emph{ruolo}    &   \emph{presente}\\
+    Valentina Caputo        &       \emph{ruolo}    &   \emph{presente}\\
+    Michele Cazzaro         &       \emph{ruolo}    &   \emph{presente}\\
+    Alberto Materazzo       &       \emph{ruolo}    &   \emph{presente}\\
+    Edoardo Retis           &       \emph{ruolo}    &   \emph{presente}\\
+\end{tabularx}
+\end{center}
+
+\vspace{5mm}
+
+\section{Ordine del giorno}
+\begin{enumerate}
+    \item 
+\end{enumerate}
+
+\vspace{5mm}
+
+\section{Resoconto}
+\begin{enumerate}
+    \item 
+\end{enumerate}
+
+\vspace{5mm}
+
+\section{Note finali}
+
+\end{document}
