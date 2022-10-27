@@ -1,0 +1,123 @@
+\documentclass[12pt]{article}
+
+% PACKAGE LIST
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{multirow}%package to manage images
+\usepackage[italian]{babel}
+\usepackage{hyperref}
+\usepackage{fancyhdr, lastpage}
+\usepackage{eso-pic,graphicx, transparent}
+\usepackage{ifthen}
+
+%% CONFIGURATION 
+\graphicspath{ {./images/} }
+\input{data.tex}
+
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcommand*{\thead}[1]{\multicolumn{1}{c}{\bfseries #1}}
+\renewcommand{\arraystretch}{1.3}%
+
+\geometry{
+    a4paper,    
+    left=20mm,  
+    right=20mm, 
+    top=30mm, 
+    bottom=20mm,
+    headheight=50pt
+    }
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    pdftitle={\pdfTitle} %AGGIUNGI DATA E VERSIONE
+   }
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{\includegraphics[width=0.3in,height=0.3in]{OutOfBoundsLogo.png} \large \bfseries Out of Bounds}
+\fancyhead[R]{\textsl{\pdfTitle}}
+% Footer delle pagine
+\fancyfoot{}
+\fancyfoot[L]{\href{mailto:\teemMail}{\teemMail}}
+\fancyfoot[R]{Pagina \thepage\ di \pageref{LastPage}}
+\rfoot{Pagina \thepage\ di \pageref{LastPage}}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%% DOCUMENT BODY
+
+\begin{document}
+
+%% FIRST PAGE
+
+\thispagestyle{empty}
+\setcounter{page}{0}
+
+\begin{center}
+\includegraphics[width=1.5in,height=1.5in]{OutOfBoundsLogo.png}\\
+\Large
+\textsc{Out of Bounds}\\
+\vspace{2cm}
+\Huge
+\textsc{Scelta del capitolato}\\
+\Large
+\documentVersion
+\vspace{3cm}
+
+\Large
+\begin{tabular}{R{8cm}|p{8cm}}
+    \textbf{Redazione}      &  \firstEditor\\
+    % \textbf{Redazione}      &  \secondEditor\\ 
+    % \textbf{Redazione}      &  \thirdEditor\\ 
+    \textbf{Verifica}       &  \verifier\\
+    \textbf{Uso}            &  Interno\\
+    \textbf{Destinatari}    &  Out of Bounds\\
+    \hfill                  &  prof. Tullio Vardanega\\
+    \hfill                  &  Prof. Riccardo Cardin\\
+\end{tabular}
+
+\vfill
+
+\normalsize
+\rule{8cm}{0.1mm}\\
+\bigskip
+\textsc{Contatti}\\
+\href{mailto:\teemMail}{\teemMail}\\
+\textsc{Repositories}\\
+\href{\documentsRepo}{Documentale}\\
+\href{\softwareRepo}{Software} 
+\end{center}
+
+%% ALTRE PAGINE
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Motivazione della scelta}
+Dopo aver esaminato in dettaglio le proposte di progetto delle varie aziende, il gruppo ha deciso di scegliere il capitolato C1 per le seguenti ragioni:
+\begin{itemize}
+    \item Il gruppo crede fortemente nella futura applicazione globale della tecnologia CAPTCHA ed è stato votato dal gruppo come prima scelta all'unanimità,
+    \item L’azienda si è da subito resa molto disponibile, per quanto riguarda il materiale per la formazione e la libera scelta sulle tecnologie da utilizzare,
+    \item Il team di progetto è rimasto entusiasta dall'interesse mostrato dal proponente alle proprie proposte di innovazione del capitolato,
+    \item La presentazione del capitolato è stata chiara e completa,
+    \item L’azienda proponente possiede una buona esperienza riguardante il seguente progetto, quindi il proponente è stato reputato in grado di seguire adeguatamente il team di sviluppo durante tutta la durata del percorso.
+\end{itemize}
+
+\section{Resoconto verbale esplorativo}
+In data 25/10/2022 il gruppo ha avuto un incontro conoscitivo con il rappresentante dell'azienda
+proponente del capitolato C1, Dott. Gregorio Piccoli, per approfondire vari punti del capitolato,
+in particolare:
+\begin{itemize}
+    \item Problemi riguardanti accessibilità della tecnologia CAPTCHA,
+    \item Problemi relativi alla sicurezza per l’accesso alla login protetta dal CAPTCHA,
+    \item Dubbi relativi a sessioni con JavaScript disabilitato,
+    \item Dubbi relativi a sessioni con JavaScript disabilitato,
+\end{itemize}
+In conclusione, il gruppo è stato soddisfatto della riunione e il capitolato è sembrato molto
+interessante. Per approfondire i temi trattati durante l'incontro conoscitivo, si consiglia la visione
+del verbale di riferimento.
+
+\end{document}
