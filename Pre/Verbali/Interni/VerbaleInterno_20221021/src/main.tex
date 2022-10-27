@@ -1,0 +1,127 @@
+\documentclass[12pt]{article}
+
+% Impostazioni generali
+
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\selectlanguage{italian}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{geometry}
+\geometry{
+    a4paper,    
+    left=20mm,  
+    right=20mm, 
+    top=30mm, 
+    bottom=20mm,
+    headheight=50pt
+    }
+\usepackage{eso-pic,graphicx, transparent}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    pdftitle={Verbale riunione 21/10/22 v 1.0} %AGGIUNGI DATA E VERSIONE
+   }
+
+% Header e footer delle pagine
+
+\usepackage{fancyhdr, lastpage}
+\pagestyle{fancy}
+\lhead{\includegraphics[width=0.3in,height=0.3in]{logov2.png} \large \bfseries Out of Bounds}
+\rhead{\textsl{Verbale riunione 21/10/22 v 1.0}}  
+\rfoot{Pagina \thepage  \thinspace\thinspace di \pageref{LastPage}}
+\lfoot{\href{mailto::sweoutofbounds@gmail.com}{sweoutofbounds@gmail.com}}
+\cfoot{}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\input{frontespizio}
+\clearpage
+
+
+\tableofcontents
+\clearpage
+
+\section{Informazioni generali} 
+\begin{itemize}
+    \item Luogo: Stanza virtuale Zoom
+    \item Data: 21/10/22
+    \item Orario di inizio: 12.30
+    \item Orario di fine: 13:30
+    \item Lista partecipanti:
+\end{itemize}
+\begin{center}
+\begin{tabularx}{0.8\textwidth} { 
+   >{\raggedright\arraybackslash}X 
+   >{\centering\arraybackslash}X 
+   >{\raggedleft\arraybackslash}X  }
+\hline
+    \textbf{Nome e Cognome} &        \textbf{presente}\\
+\hline
+    Jacopo Angeli           &        \emph{presente}\\
+    Simone Bisortole        &        \emph{presente}\\
+    Valentina Caputo        &        \emph{presente}\\
+    Michele Cazzaro         &        \emph{presente}\\
+    Alberto Matterazzo       &        \emph{presente}\\
+    Edoardo Retis           &        \emph{presente}\\
+\end{tabularx}
+\end{center}
+
+\vspace{5mm}
+
+\section{Ordine del giorno}
+\begin{enumerate}
+    \item   Conoscenza dei membri del gruppo
+    \item   Brand identity del gruppo
+    \item   Decisione di mezzi di comunicazione comuni
+    \item   Discussione dei capitolati per la scelta
+    \item   Decisione della cadenza degli incontri tra membri
+    \item   Creazione e-mail di gruppo
+\end{enumerate}
+
+\vspace{5mm}
+
+\section{Resoconto}
+Dopo esserci brevemente presentati, il gruppo ha confermato la già presente volontà di utilizzare \textbf{Telegram} come piattaforma principale per le conversazioni informali e veloci.
+
+Il nome ed il logo del gruppo sono stati confermati in seguito ad uno scambio di messaggi effettuato su Telegram.
+
+La scelta dello strumento per le riunioni invece è ricaduta senza discussioni particolari su \textbf{Discord}.
+
+Per la condivisione di documenti e codice sorgente il gruppo decide che utilizzerà \textbf{Github}.
+
+Durante la discussione per la scelta dei capitolati, è stata formalizzata la preferenza stretta per 3 delle proposte, come previsto dal sondaggio effettuato su Telegram. Il capitolato preferito risulta essere C1, proposto da Zucchetti; è seguito rispettivamente da C5 e C4.
+
+Il giorno in cui è stata effettuata la prima riunione sembra adatto per delle riunioni ricorrenti (Venerdì mattina). Si rende evidente la necessità di effettuare almeno un incontro collettivo con cadenza settimanale.
+
+In seguito a dei problemi riscontrati con Google Groups, il gruppo decide di utilizzare \textbf{Gmail} per l'indirizzo mail del gruppo. Si decide di implementare l'inoltro automatico alle caselle universitarie dei membri.
+
+Viene esternata la necessità di stilare un documento che formalizzi il way of working.
+
+La riunione si scioglie con l'intenzione di incontrarsi personalmente dopo lezione all'inizio della settimana ventura.
+
+\vspace{5mm}
+
+\section{Note finali}
+\begin{itemize}
+    \item Comunicazione testuale: Telegram
+    \item Comunicazione verbale: Discord
+    \item Comunicazioni formali: Gmail
+    \item Condivisione materiale: Github
+    \item Effettuata scelta del logo
+    \item Scelta della preferenza dei capitolati    \begin{enumerate}
+                                                        \item C1
+                                                        \item C5
+                                                        \item C4
+                                                    \end{enumerate}
+    \item Scelta cadenza riunioni
+\end{itemize}
+\end{document}
